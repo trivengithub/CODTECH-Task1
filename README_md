@@ -1,0 +1,57 @@
+Name:TRIVEN KUMAR
+Company:CODTECH IT SOLUTIONS
+ID:CT08CS99
+Domain:MACHINE LEARNING
+Duration:MAY to JULY 2024
+Mentor:SRAVANI.G
+
+ Project Overview: Predicting Housing Prices using Linear Regression
+
+  **Objective:**
+   - Build a predictive model to estimate housing prices in Boston suburbs using linear regression.
+   - Utilize features such as average number of rooms (`RM`), % lower status of the population (`LSTAT`), and pupil-teacher ratio by town (`PTRATIO`).
+
+  **Dataset:**
+   - **Boston Housing Dataset:** 
+     - This dataset is commonly used in regression tasks and is available in `scikit-learn` (`sklearn.datasets`).
+     - Features include both numerical and categorical data related to housing characteristics.
+     - Target variable (`PRICE`) represents the median value of owner-occupied homes in $1000s.
+
+  **Steps Involved:**
+
+   **a. Data Loading and Preparation:**
+   - Load the Boston Housing dataset using `load_boston()` from `sklearn.datasets`.
+   - Create a DataFrame for easier data manipulation and exploration using `pandas`.
+   - Select relevant features (`RM`, `LSTAT`, `PTRATIO`) and the target variable (`PRICE`).
+
+   **b. Data Exploration:**
+   - Explore the dataset to understand the distribution and relationships between features and the target variable.
+   - Visualize correlations between features and the target variable using plots (e.g., scatter plots, histograms).
+
+   **c. Data Splitting:**
+   - Split the dataset into training and testing sets using `train_test_split()` from `scikit-learn`.
+   - Typically, use an 80-20 split where 80% of the data is used for training the model and 20% for testing.
+
+   **d. Model Creation and Training:**
+   - Create a `LinearRegression` model using `LinearRegression()` from `scikit-learn`.
+   - Train the model using the training data (`X_train`, `y_train`) with `.fit()`.
+
+   **e. Model Evaluation:**
+   - Make predictions on the test set (`X_test`) using `.predict()`.
+   - Evaluate the model using metrics such as Mean Squared Error (MSE) and R-squared (`r2_score`) to assess its performance.
+
+   **f. Results Interpretation:**
+   - Visualize predicted vs actual prices to understand how well the model predicts housing prices.
+   - Optionally, examine the coefficients (`model.coef_`) and intercept (`model.intercept_`) to interpret the impact of each feature on housing prices.
+
+ **Implementation:**
+   - Use Python programming language with libraries such as `numpy`, `pandas`, `scikit-learn`, and `matplotlib`.
+   - Write and execute code to load data, preprocess it, train the model, evaluate performance, and interpret results.
+   - Iteratively adjust model parameters or try different feature combinations to improve predictive accuracy.
+
+ **Conclusion:**
+   - Summarize findings and insights gained from the project.
+   - Discuss potential next steps for improving the model, such as exploring more advanced regression techniques or incorporating additional features.
+
+ Summary:
+This project leverages linear regression to predict housing prices based on the Boston Housing dataset, focusing on key features like average number of rooms, % lower status of the population, and pupil-teacher ratio. By following these steps, you can build a foundational understanding of applying machine learning techniques to real-world regression problems. Adjustments and enhancements can be made based on specific requirements and further exploration of the dataset.
